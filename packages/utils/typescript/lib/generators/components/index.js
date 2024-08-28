@@ -1,7 +1,5 @@
 'use strict';
 
-const { factory } = require('typescript');
-
 const { models } = require('../common');
 const { emitDefinitions, format, generateSharedExtensionDefinition } = require('../utils');
 
@@ -14,6 +12,8 @@ const { emitDefinitions, format, generateSharedExtensionDefinition } = require('
  * @param {string} options.pwd
  */
 const generateComponentsDefinitions = async (options = {}) => {
+  const { factory } = require('typescript');
+
   const { strapi } = options;
 
   const { components } = strapi;
