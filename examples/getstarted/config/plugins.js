@@ -30,4 +30,11 @@ module.exports = () => ({
       testConf: 3,
     },
   },
+  todo: {
+    enabled: true,
+    resolve: `./src/plugins/todo-example`, // From the root of the project
+    config: {
+      testConf: 3,
+    },
+  },
 });

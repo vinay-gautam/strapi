@@ -185,6 +185,18 @@ const useDoc = () => {
 
   return {
     collectionType,
+    /**
+     * @deprecated use `collectionType` instead
+     */
+    isSingleType: collectionType === SINGLE_TYPES,
+    /**
+     * @deprecated use `model` instead
+     */
+    slug,
+    /**
+     * @deprecated use id === 'create' instead
+     */
+    isCreatingEntry: id === 'create',
     model: slug,
     id: origin || id === 'create' ? undefined : id,
     ...useDocument(

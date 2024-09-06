@@ -6,7 +6,10 @@
 
 export { buildValidParams } from './utils/api';
 
-export { useDocument as unstable_useDocument } from './hooks/useDocument';
+export {
+  useDocument as unstable_useDocument,
+  useDoc as unstable_useDoc,
+} from './hooks/useDocument';
 export { useDocumentActions as unstable_useDocumentActions } from './hooks/useDocumentActions';
 export { useDocumentLayout as unstable_useDocumentLayout } from './hooks/useDocumentLayout';
 export type {
